@@ -1,0 +1,30 @@
+\section{Un exemple plus simple}
+Pour illustrer ce que veut dire la continuation analytique, prenons un exemple plus simple:
+
+\begin{equation}
+S(x) = \sum_{n=0}^\infty x^n = 1 + x + x^2 + x^3 \ldots
+\end{equation}
+
+Il s'agit d'une série géométrique. On peut écrire
+
+\begin{align}
+S(x) - x S(x) & = (1 + x + x^2 + x^3 + \ldots) - (x + x^2 + x^3 + \ldots) \\
+S(x) (1 - x)  & = 1 \\
+         S(x) & = \frac{1}{1-x} 
+\end{align}
+
+Cette expression n'est valable que si $|x| < 1$. Or on peut \og étendre \fg~ le domaine de définition de cette fonction à tout le domaine complexe, en écrivant
+
+\begin{equation}
+\forall z \in \Cset, z \neq 1, S(z) = \frac{1}{1-z}.
+\end{equation}
+
+De cette fa\c{c}on, $S(z)$ étend le domaine de $S(x)$. C'est la {\em continuation analytique} de la série réelle $S$. Par exemple on peut très bien calculer $S(2) = -\frac{1}{2}$. Dans ce sens, on peut alors écrire
+
+\begin{equation}
+S(2) = \sum_{n=0}^\infty 2^n = 1 + 2 + 4 + 8 + 16 + \ldots = -\frac{1}{2},
+\end{equation}
+
+ce qui parait ridicule, et pourtant a un sens comme on vient de le voir.
+
+D'une manière générale, un résultat majeur d'analyse de la fonction complexe est que pour toute série convergente dans un sous-ensemble ouvert non vide de $\Rset$, il existe une et une seule continuation analytique de cette série valide presque partout dans $\Cset$ (c-à-d avec au plus un nombre dénombrable de pôles).
